@@ -8,23 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E3746A581E4B781600411F4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3746A571E4B781600411F4B /* main.cpp */; };
+		E3746A601E4B783A00411F4B /* kernels.cl in Sources */ = {isa = PBXBuildFile; fileRef = E3746A5F1E4B783A00411F4B /* kernels.cl */; };
+		E3746A611E4B78B700411F4B /* kernels.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3746A5F1E4B783A00411F4B /* kernels.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E3746A521E4B781600411F4B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				E3746A611E4B78B700411F4B /* kernels.cl in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E3746A541E4B781600411F4B /* SingleWorkItemTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SingleWorkItemTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3746A571E4B781600411F4B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E3746A5E1E4B783A00411F4B /* cl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
+		E3746A5F1E4B783A00411F4B /* kernels.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = kernels.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,9 @@
 		E3746A561E4B781600411F4B /* SingleWorkItemTest */ = {
 			isa = PBXGroup;
 			children = (
+				E3746A5E1E4B783A00411F4B /* cl.hpp */,
 				E3746A571E4B781600411F4B /* main.cpp */,
+				E3746A5F1E4B783A00411F4B /* kernels.cl */,
 			);
 			path = SingleWorkItemTest;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3746A581E4B781600411F4B /* main.cpp in Sources */,
+				E3746A601E4B783A00411F4B /* kernels.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +224,7 @@
 		E3746A5C1E4B781600411F4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +232,7 @@
 		E3746A5D1E4B781600411F4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
